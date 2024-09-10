@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Online</h1>
+        <p>Selecciona un libro para ver los detalles y su imagen.</p>
+    </header>
+    
+    <main>
+        <section id="book-list">
+            <h2>Libros Disponibles</h2>
+            <select id="book-select">
+                <option value="" disabled selected>Seleccione un libro</option>
+                <!-- Opciones de libros serán añadidas dinámicamente -->
+            </select>
+        </section>
+        
+        <section id="book-details">
+            <div id="book-info">
+                <img id="book-image" src="" alt="Imagen del libro" class="hidden">
+                <div id="book-text">
+                    <h3 id="book-title">Seleccione un libro</h3>
+                    <p id="book-description">La descripción del libro aparecerá aquí.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Biblioteca Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
